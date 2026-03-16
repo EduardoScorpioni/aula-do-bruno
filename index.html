@@ -1,67 +1,50 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eclipse Studio | Design Moderno</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Calculadora</title>
+
+<link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-    <div class="container">
-        <div class="header">
-            <div class="badge">✨ Design do Futuro</div>
-            <h1>Eclipse Studio</h1>
-            <p class="subtitle">Transformando ideias em experiências digitais extraordinárias com tecnologia de ponta e design inovador</p>
-        </div>
 
-        <div class="features">
-            <div class="feature-card">
-                <div class="feature-icon">🚀</div>
-                <h3>Performance</h3>
-                <p>Otimização avançada para resultados impressionantes e experiências fluidas em qualquer dispositivo</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">🎨</div>
-                <h3>Design Único</h3>
-                <p>Criações exclusivas que combinam estética moderna com funcionalidade excepcional</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">⚡</div>
-                <h3>Inovação</h3>
-                <p>Tecnologias de última geração para projetos que definem tendências no mercado digital</p>
-            </div>
-        </div>
+<div class="calculadora">
 
-        <!-- Your original elements, but modernized! -->
-        <div class="input-section">
-            <input type="text" placeholder="Digite algo incrível...">
-            <span>meu fundo é bisqui</span>
-        </div>
+<input type="text" id="display" class="display" disabled>
 
-        <div class="divider-wrapper">
-            <hr class="modern-hr">
-            <span class="divider-text">✦ ELEVANDO PADRÕES ✦</span>
-            <hr class="modern-hr">
-        </div>
+<div class="botoes">
 
-        <div class="stats">
-            <div class="stat-item">
-                <div class="stat-number">500+</div>
-                <div class="stat-label">Projetos</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">98%</div>
-                <div class="stat-label">Satisfação</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">24/7</div>
-                <div class="stat-label">Suporte</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">∞</div>
-                <div class="stat-label">Criatividade</div>
-            </div>
-        </div>
-    </div>
+<button onclick="limpar()">C</button>
+<button onclick="apagar()">←</button>
+<button onclick="adicionar('/')">÷</button>
+<button onclick="adicionar('*')">×</button>
+
+<button onclick="adicionar('7')">7</button>
+<button onclick="adicionar('8')">8</button>
+<button onclick="adicionar('9')">9</button>
+<button onclick="adicionar('-')">−</button>
+
+<button onclick="adicionar('4')">4</button>
+<button onclick="adicionar('5')">5</button>
+<button onclick="adicionar('6')">6</button>
+<button onclick="adicionar('+')">+</button>
+
+<button onclick="adicionar('1')">1</button>
+<button onclick="adicionar('2')">2</button>
+<button onclick="adicionar('3')">3</button>
+<button onclick="calcular()" class="igual">=</button>
+
+<button onclick="adicionar('0')" class="zero">0</button>
+<button onclick="adicionar('.')">.</button>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
